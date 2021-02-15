@@ -1,0 +1,30 @@
+@mixin font($color: white, $font-family: "roboto-regular", $size: 30px) {
+  font-size: $size;
+  color: $color;
+  font-family: $font-family;
+}
+
+@mixin flex($justify: space-around, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin center {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@mixin btn($background, $color, $width: 80px, $radius: 20px) {
+  background-color: $background;
+  color: $color;
+  font-size: 24px;
+  text-align: center;
+  font-family: "roboto-regular";
+  border-radius: $radius;
+  width: $width;
+  text-align: center;
+  height: 30px;
+}

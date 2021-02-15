@@ -1,0 +1,558 @@
+@font-face {
+  font-family: "roboto-regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "roboto-thin";
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "roboto-italic";
+  src: url(../fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: "roboto-black";
+  src: url(../fonts/Roboto-Black.ttf);
+}
+nav {
+  background-image: url(../images/banner_bg.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+nav .barre {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+}
+nav .barre .yellow {
+  color: #f8d357;
+}
+nav .nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  color: white;
+  font-family: "roboto-thin";
+  width: 60vh;
+  text-transform: uppercase;
+}
+nav .nav-hamburger {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  color: white;
+  font-family: "roboto-thin";
+}
+nav .nav-hamburger .burger-list {
+  display: none;
+}
+nav .nav-hamburger:hover {
+  color: #f8d357;
+  position: relative;
+}
+nav .nav-hamburger:hover .burger-list {
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+nav .catchphrase {
+  height: 100%;
+  width: 70%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+}
+nav .catchphrase .awesome {
+  font-size: 60px;
+  color: white;
+  font-family: "roboto-bold";
+}
+nav .catchphrase #blue {
+  font-size: 60px;
+  color: #3bc1e2;
+  font-family: "roboto-bold";
+}
+nav .catchphrase #orange {
+  font-size: 60px;
+  color: orange;
+  font-family: "roboto-bold";
+}
+nav .catchphrase .btn-start {
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  font-family: "roboto-regular";
+  border-radius: 30px;
+  width: 180px;
+  text-align: center;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.staircase {
+  background-image: url(../images/about-bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+  padding: 30px;
+}
+.staircase div {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.staircase img {
+  background-color: orange;
+  border-radius: 100%;
+  border: solid 2px white;
+  margin: 10px;
+  padding: 10px;
+}
+.staircase p {
+  font-size: 20px;
+  color: white;
+  font-family: "roboto-regular";
+  width: 20vw;
+}
+.staircase .underline {
+  font-size: 25px;
+  color: white;
+  font-family: "roboto-bold";
+  position: relative;
+}
+.staircase .underline::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -10px;
+  left: calc(0px + 0%);
+}
+.staircase .btn {
+  background-color: #3bc1e2;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: "roboto-regular";
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  height: 30px;
+}
+
+.our-gallery {
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #3bc1e2;
+}
+.our-gallery .cyan {
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+  width: 100vw;
+  text-align: left;
+  padding: 2vw;
+}
+.our-gallery .cyan .underline {
+  font-size: 40px;
+  color: white;
+  font-family: "roboto-bold";
+  position: relative;
+}
+.our-gallery .cyan .underline::after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.our-gallery .cyan ul {
+  list-style-type: none;
+  padding: 0;
+}
+.our-gallery .cyan ul a {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+.our-gallery .cyan ul a:hover {
+  color: #f8d357;
+}
+.our-gallery .gallery {
+  background-color: #d8d8d8;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.our-gallery .gallery img {
+  width: 30vh;
+}
+
+.yellow-banner {
+  background-color: #f8d357;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+  overflow: hidden;
+}
+.yellow-banner div {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.yellow-banner div section {
+  font-size: 30px;
+  color: black;
+  font-family: "Roboto-Thin";
+  background-color: white;
+  width: 60vw;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.yellow-banner div section p {
+  font-size: 22px;
+  color: #cacaca;
+  font-family: "roboto-italic";
+}
+.yellow-banner div .thin {
+  font-size: 20px;
+  color: white;
+  font-family: "roboto-thin";
+}
+
+.posts {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(../images/blog-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.posts .thin {
+  width: 55%;
+  text-align: left;
+}
+.posts div {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  color: white;
+  font-family: "roboto-regular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.posts div .underline {
+  font-size: 35px;
+  color: white;
+  font-family: "roboto-bold";
+  position: relative;
+}
+.posts div .underline::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -10px;
+  left: calc(0px + 30%);
+}
+.posts div .btn-posts {
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  font-family: "roboto-regular";
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.posts div .btn-posts:hover {
+  color: #f8d357;
+}
+.posts div .thin {
+  font-size: 24px;
+  color: white;
+  font-family: "roboto-thin";
+}
+.posts div section {
+  font-size: 30px;
+  color: black;
+  font-family: "Roboto-Thin";
+  background-color: white;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+}
+.posts div section img {
+  width: 100%;
+}
+.posts div section .blue {
+  font-size: 15px;
+  color: #3bc1e2;
+  font-family: "roboto-bold";
+}
+.posts div section .bold {
+  font-size: 35px;
+  color: black;
+  font-family: "roboto-bold";
+}
+.posts .ice-cream {
+  height: 80vh;
+}
+.posts article {
+  background-color: rgba(0, 0, 0, 0.342);
+  width: 100%;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: grey;
+  height: 60vh;
+  font-size: 20px;
+  color: white;
+  font-family: roboto-regular;
+  text-align: center;
+}
+.contact-us div {
+  width: 30vw;
+}
+.contact-us div .underline {
+  font-size: 35px;
+  color: white;
+  font-family: "roboto-bold";
+  position: relative;
+}
+.contact-us div .underline::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -10px;
+  left: calc(0px + 30%);
+}
+.contact-us .btn-start {
+  background-color: #3bc1e2;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: "roboto-regular";
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  height: 30px;
+  margin-top: 30px;
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #494949;
+  height: 30vh;
+  font-size: 15px;
+  color: white;
+  font-family: "roboto-regular";
+}
+.footer div .title {
+  font-size: 20px;
+  color: white;
+  font-family: "roboto-bold";
+  text-transform: uppercase;
+}
+.footer div .yellow {
+  color: #f8d357;
+}
+.footer div i {
+  color: #494949;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+}
+.footer #location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.footer #double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.footer #double div {
+  width: 10vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .staircase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250vh;
+  }
+  .staircase div {
+    margin-bottom: 30px;
+  }
+}
+nav .nav-hamburger {
+  display: none;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150vh;
+}
+.posts div {
+  height: 60vh;
+}
+.posts .our-gallery .gallery img {
+  width: 20vh;
+}
+
+@media screen and (max-width: 930px) {
+  nav {
+    height: 90vh;
+  }
+  nav .nav-list {
+    display: none;
+  }
+  nav .nav-hamburger {
+    display: flex;
+  }
+
+  .staircase {
+    height: 200vh;
+  }
+  .staircase p {
+    width: 50vw;
+  }
+
+  .footer div {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 770px) {
+  nav {
+    height: 90vh;
+  }
+
+  .our-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-gallery .cyan {
+    width: 70vw;
+  }
+  .our-gallery .gallery img {
+    width: 10vh;
+  }
+
+  .footer {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer div {
+    width: 50vw;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 670px) {
+  nav {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .posts .btn-post {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

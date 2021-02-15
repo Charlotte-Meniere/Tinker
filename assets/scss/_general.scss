@@ -1,0 +1,313 @@
+// navbarre
+nav {
+  background-image: url(../images/banner_bg.jpg);
+  background-size: cover;
+  height: 90vh;
+
+  .barre {
+    color: white;
+    @include flex;
+    @include font;
+    .yellow {
+      color: $yellow-banner;
+    }
+  }
+  .nav-list {
+    @include flex;
+    @include font(white, "roboto-thin", 20px);
+    width: 60vh;
+    text-transform: uppercase;
+  }
+  .nav-hamburger {
+    @include flex;
+    @include font(white, "roboto-thin", 20px);
+    .burger-list {
+      display: none;
+    }
+  }
+  .nav-hamburger:hover {
+    color: $yellow-banner;
+    position: relative;
+    .burger-list {
+      background-color: white;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      width: 100px;
+      @include flex(center, center, column);
+    }
+  }
+  .catchphrase {
+    height: 100%;
+    width: 70%;
+    @include center;
+    @include flex(center, center, column);
+    @include font;
+
+    .awesome {
+      @include font(white, "roboto-bold", 60px);
+    }
+    #blue {
+      @include font($sweet-blue, "roboto-bold", 60px);
+    }
+    #orange {
+      @include font(orange, "roboto-bold", 60px);
+    }
+    .btn-start {
+      @include btn(white, black, 180px, 30px);
+      margin: 0 auto;
+    }
+  }
+}
+
+// 4 éléments avec picto
+
+.staircase {
+  background-image: url(../images/about-bg.jpg);
+  background-size: cover;
+  @include flex;
+  @include font;
+  padding: 30px;
+
+  div {
+    @include center;
+    height: 100%;
+    @include flex(space-around, center, column);
+  }
+  img {
+    background-color: orange;
+    border-radius: 100%;
+    border: solid 2px white;
+    margin: 10px;
+    padding: 10px;
+  }
+  p {
+    @include font(white, "roboto-regular", 20px);
+    width: 20vw;
+  }
+  .underline {
+    @include font(white, "roboto-bold", 25px);
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      bottom: -10px;
+      left: calc(0px + 0%);
+    }
+  }
+  .btn {
+    @include btn($sweet-blue, white, 250px);
+  }
+}
+
+// cyan et carré d'image
+.our-gallery {
+  @include font;
+  @include flex(space-around, center, row);
+  background-color: $sweet-blue;
+  .cyan {
+    @include font;
+    width: 100vw;
+    text-align: left;
+    padding: 2vw;
+
+    .underline {
+      @include font(white, "roboto-bold", 40px);
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 30%;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      a {
+        text-align: left;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $yellow-banner;
+      }
+    }
+  }
+  .gallery {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-wrap: wrap;
+    @include flex(center, center, row);
+    img {
+      width: 30vh;
+    }
+  }
+}
+.yellow-banner {
+  background-color: $yellow-banner;
+  height: 60vh;
+  @include flex(center, center, column);
+  @include font;
+  overflow: hidden;
+
+  div {
+    @include center;
+    @include flex(center, center, column);
+    section {
+      @include font(black, "Roboto-Thin");
+      background-color: white;
+      width: 60vw;
+      @include center;
+      p {
+        @include font(rgb(202, 202, 202), "roboto-italic", 22px);
+      }
+    }
+    .thin {
+      @include font(white, "roboto-thin", 20px);
+    }
+  }
+}
+
+.posts {
+  background-color: black;
+  height: 100vh;
+  @include flex(center, center, row);
+  background-image: url(../images/blog-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .thin {
+    width: 55%;
+    text-align: left;
+  }
+
+  div {
+    @include center;
+    @include font;
+    @include flex(center, center, column);
+    height: 100vh;
+
+    .underline {
+      @include font(white, "roboto-bold", 35px);
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        bottom: -10px;
+        left: calc(0px + 30%);
+      }
+    }
+
+    .btn-posts {
+      @include btn(white, black, 320px, 20px);
+      margin-bottom: 20px;
+    }
+    .btn-posts:hover {
+      color: $yellow-banner;
+    }
+
+    .thin {
+      @include font(white, "roboto-thin", 24px);
+    }
+
+    section {
+      @include font(black, "Roboto-Thin");
+      background-color: white;
+      @include center;
+      text-align: left;
+      width: 80%;
+      img {
+        width: 100%;
+      }
+      .blue {
+        @include font($sweet-blue, "roboto-bold", 15px);
+      }
+      .bold {
+        @include font(black, "roboto-bold", 35px);
+      }
+    }
+  }
+  .ice-cream {
+    height: 80vh;
+  }
+  article {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 100%;
+  }
+}
+.contact-us {
+  @include flex(center, center, column);
+  background-color: grey;
+  height: 60vh;
+  @include font(white, roboto-regular, 20px);
+  text-align: center;
+  div {
+    width: 30vw;
+    .underline {
+      @include font(white, "roboto-bold", 35px);
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        bottom: -10px;
+        left: calc(0px + 30%);
+      }
+    }
+  }
+
+  .btn-start {
+    @include btn($sweet-blue, white, 300px, 20px);
+    margin-top: 30px;
+  }
+}
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+.footer {
+  @include flex(space-around, center);
+  background-color: $grey;
+  height: 30vh;
+  @include font(white, "roboto-regular", 15px);
+  div {
+    .title {
+      @include font(white, "roboto-bold", 20px);
+      text-transform: uppercase;
+    }
+    .yellow {
+      color: $yellow-banner;
+    }
+    i {
+      color: $grey;
+      border-radius: 100%;
+      padding: 5px;
+      background-color: white;
+    }
+  }
+  #location {
+    @include flex(flex-start, center, column);
+  }
+  #double {
+    @include flex(center, center, row);
+    div {
+      width: 10vw;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@media screen and (max-width: 1200px) {
+  .staircase {
+    @include flex(center, center, column);
+    height: 250vh;
+    div {
+      margin-bottom: 30px;
+    }
+  }
+}
+nav {
+  .nav-hamburger {
+    display: none;
+  }
+}
+.posts {
+  @include flex(center, center, column);
+  height: 150vh;
+  div {
+    height: 60vh;
+  }
+  .our-gallery {
+    .gallery {
+      img {
+        width: 20vh;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:930px ) {
+  nav {
+    height: 90vh;
+    .nav-list {
+      display: none;
+    }
+    .nav-hamburger {
+      display: flex;
+    }
+  }
+
+  .staircase {
+    height: 200vh;
+    p {
+      width: 50vw;
+    }
+  }
+
+  .footer {
+    div {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  nav {
+    height: 90vh;
+  }
+  .our-gallery {
+    display: flex;
+    flex-direction: column;
+    .cyan {
+      width: 70vw;
+    }
+    .gallery {
+      img {
+        width: 10vh;
+      }
+    }
+  }
+  .footer {
+    height: 60vh;
+    @include flex(center, center, column);
+    div {
+      width: 50vw;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 670px) {
+  nav {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .posts {
+    .btn-post {
+      width: 300px;
+    }
+  }
+}
